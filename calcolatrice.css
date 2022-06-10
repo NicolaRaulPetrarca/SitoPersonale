@@ -1,66 +1,94 @@
 *, *::before, *::after {
     box-sizing: border-box;
     font-family: Gotham Rounded, sans-serif;
-    font-weight: normal;
-  } /* * stà per tutti gli elementi, before e after agiscono sul prima e dopo, sono pseudo elementi */
+    font-weight: normal;    
+} /* * stà per tutti gli elementi, before e after agiscono sul prima e dopo, sono pseudo elementi */
 
-  body {
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to right, #CBCE91FF, rgb(47, 196, 42));
-    } /* giusto per il background */
-
-    .calculator-grid {
-        display: grid;
-        justify-content: center;
-        align-content: center;
-        min-height: 100vh;
-        grid-template-columns: repeat(4, 100px);
-        grid-template-rows: minmax(120px, auto) repeat(5, 100px);
-        }
-
-    .calculator-grid > button {
-        cursor: pointer;
-        font-size: 2rem;
-        border: 1px, solid #FFFFFF;
-        outline: none;
-        background-color: rbga(255, 255, 255, 0.75);
-        }
-      
-    .calculator-grid > button:hover {
-        background-color: #a9a9a9;
-    }
-
-    .span-two {
-        grid-column: span 2;
-        color: #adf802;
-        background-color: rgba(0, 139, 93, 0.8);
-      }
-
-      .output{
-        grid-column: 1 / -1;
-        background-color: rgba(0, 0, 0, 0.75);
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-around;
-        flex-direction: column;
-        padding: 10px;
-        word-wrap: break-word;
-        word-break: break-all;
-        color: rgba(255,255, 255, 0.75);
-      }
-
-      .output .previous-operand{
-        color: rgba(255,255, 255, 0.75);
-        font-size: 1.5rem;
-      }
-
-      .output .current-operand{
-        color: white;
-        font-size: 2.5rem;
-      }
-
-footer{
+a,footer{
   text-align: center;
-  background-color: crimson;
+  color: white;
 }
+
+button{
+  background-color: black;
+  color: white;
+  align-content: center;
+  font-size: 8.33vh;
+  border-radius: 100%;
+  padding: 15px 32px;
+}
+
+.schermo{
+  background-color: white;  
+  min-height: 5%;
+  color: black;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+} 
+
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 680px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  /* .output {
+    width: 8.33%;
+  } */
+}
+
+body {
+  align-content: center;
+  height:auto;
+  color:white;
+  background: linear-gradient(to right, rgb(26, 23, 214), rgb(228, 14, 14));
+}
+
+input {
+  color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

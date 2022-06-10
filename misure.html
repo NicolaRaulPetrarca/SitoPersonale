@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!-- favicon -->
+    <link rel="stylesheet" href="misure.css"><!-- stile css -->
+    <script src="misure.js"></script> <!-- js -->
+    <title>Convertitore unità di misura</title>
+    <h3>Digita un numero e clicca invio</h3>
+</head>
+
+<body>
+
+<div class="row">
+    <div class="col-3">
+        <input type="number" min="0" id="pollici" onchange="daPollici()">in</input>
+        <input type="number" min="0" id="metri" onchange="daMetri()">m</input>
+        <input type="number" min="0" id="centimetri" onchange="daCentimetri()">cm</input>    
+    </div>
+    <div class="col-3">
+        <input type="number" min="0" id="once" onchange="daOnce()">oz</input>
+        <input type="number" min="0" id="litri" onchange="daLitri()">l</input>
+        <input type="number" min="0" id="millilitri" onchange="daMillilitri()">ml</input>
+    </div>
+
+    <div class="col-3">
+        <input type="number" id="kelvin" onchange="daKelvin()">°K</input>
+        <input type="number" id="celsius" onchange="daCelsius()">°C</input>
+        <input type="number" id="fahrenheit" onchange="daFahrenheit()">°F</input>
+    </div>
+
+    <div class="col-3">
+        <input type="number" min="0" id="libbra" onchange="daLibbra()">lbs</input>
+        <input type="number" min="0" id="kilogrammi" onchange="daKilogrammi()">kg</input>
+        <input type="number" min="0" id="grammi" onchange="daGrammi()">g</input>
+    </div>
+
+</div>
+    
+</body>
+
+<footer>
+    <a href="index.html">HomePage</a>
+</footer>
+
+</html>
