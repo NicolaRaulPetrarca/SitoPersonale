@@ -1,5 +1,5 @@
 var x = new String;
-function calcola(addendo1,addendo2,operazione){
+function calcola(){
     stampa(eval(x));
     x="";
 }
